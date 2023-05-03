@@ -1,0 +1,47 @@
+.heading{
+font-family: 'Montez', cursive;
+font-size: 30px;
+}
+.subheading{
+font-family: 'Ubuntu Mono'; 
+}
+.blog{
+  display: flex;
+  justify-content: center;
+}
+.Sign_up_modal{
+  /* display: none; */
+}
+.Sign_in_modal{
+  display: none;
+}
+.Sign_up_form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.Sign_in_form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.Sign_in_modal_footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Sign_btn{
+  width: 100%;
+  margin: 15px 0;
+  color: white;
+  background-color: green;
+  border: none; 
+  height: 30px;;
+}

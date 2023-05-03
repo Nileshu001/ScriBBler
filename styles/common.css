@@ -1,0 +1,65 @@
+body{    
+    background-size: 100%;
+    
+}
+p{
+    margin: inherit;
+    font-size: 25px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    color: blue;
+    font-size: 25px ;
+}
+.subheading{
+    font-size: 12px;
+}
+.Sign_up{
+    color: white;
+    background-color: blue;
+    border: none;
+    height: 25px;
+    width: 80px;
+
+}
+.Sign_in{
+    color: white;
+    background-color: blue;
+    border: none;
+    height: 25px;
+    width: 80px;
+
+}
+#myModal{
+    position: fixed;
+    overflow: auto;
+    margin-left: -50%;
+    
+    margin-top: 50px;
+    background-color: white;
+    padding: 1%;
+    width: 30%;
+    
+}
+input{
+    padding: 2%;
+}
+label{
+        margin: 10px 0px 4px 0;
+}
+.close{
+  color: #aaa;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+  background: none;  
+}
+.modal_header{
+    display: flex;
+    justify-content: space-between;
+    
+}

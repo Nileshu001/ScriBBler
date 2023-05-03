@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ScriBBler</title>
+    <link rel="stylesheet" href="..\styles/common.css">
+    <link rel="stylesheet" href="..\styles/index.css">
+    <link rel="stylesheet" href="..\scripts\index.js">    
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    
+</head>
+
+<body background="../images\background.jpg">
+
+<div class="header">
+    <div>
+        <header class="heading">ScriBBler</header>
+        <a class="subheading">Explore, Imagine, Create</a>
+    </div>
+    <div class="submit">
+        <button class="Sign_up" id="Sign_up" onclick="Sign_up()">Sign Up</button>
+        <div id="myModal" class="Sign_up_modal">
+            <!-- Modal content -->
+            <div class="modal_header">
+                <p>Get Started</p>
+                <button type="button" class="close">&times;</button>
+            </div><hr>
+            <div class="Sign_up_form" id="Sign_up_form">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Your Name">
+                <label>Usename</label>
+                <input type="text" placeholder="Enter Your Usename">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Your Password">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Re-enter Your Password">
+            </div>
+            <div class="Sign_up_modal_footer">
+                <button type="button" class="Sign_btn">Sign Up</button>
+            </div>
+        </div>
+        <button class="Sign_in" id="Sign_in"onclick="Sign_in">Sign In</button>
+        <div id="myModal" class="Sign_in_modal">
+            <!-- Modal content -->
+            <div class="modal_header">
+                <p>Welcome Back</p>
+                <button type="button" class="close">&times;</button>
+            </div><hr>
+            <div class="Sign_in_form" id="Sign_in_form">
+                <label>Usename</label>
+                <input type="text" placeholder="Enter Your Usename">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Your Password">
+            </div>
+            <div class="Sign_in_modal_footer">                    
+                <button type="button" class="Sign_btn">Sign In</button>
+                <div>
+                    <span>Not a member? </span><a href="">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="blog">
+    <button>All Posts</button>
+    <button>Create Post</button>
+</div>
+</body>
+
+</html>
