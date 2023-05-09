@@ -1,6 +1,7 @@
-.heading{
-font-family: 'Montez', cursive;
-font-size: 30px;
+body{    
+    background-size: cover;
+    background-repeat: no-repeat;
+         
 }
 .subheading{
 font-family: 'Ubuntu Mono'; 
@@ -8,9 +9,11 @@ font-family: 'Ubuntu Mono';
 .blog{
   display: flex;
   justify-content: center;
+  padding-block-start: 20%;
+  
 }
 .Sign_up_modal{
-  /* display: none; */
+  display: none;
 }
 .Sign_in_modal{
   display: none;
@@ -45,3 +48,8 @@ font-family: 'Ubuntu Mono';
   border: none; 
   height: 30px;;
 }
+
+
+
+
+
