@@ -1,0 +1,100 @@
+body{
+    margin: 1%;
+}
+h2{    
+    text-align: center; 
+}
+p{
+    color: black;
+}
+#paraText{
+    background-color: white;
+    color: black;
+}
+.container_post{
+    width: 100%;
+    padding: 25px
+}
+.container_post_header{
+    width: 100%;
+}
+.userAndButton{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.author{
+    font-size: 20px;
+    font-weight: 500;
+}
+.edit-button{
+    width: 75px;
+    height: 35px;
+    background: #ff3e8b;
+    border: none;
+    color: white;
+
+}
+.edit-button:hover,
+.edit-button:focus {
+  background: #ff0066;
+}
+.save-button{
+    display: none;
+    width: 75px;
+    height: 35px;
+    background: #ff3e8b;
+    border: none;
+    color: white;
+
+}
+.save-button:hover,
+.save-button:focus {
+  background: #ff0066;
+}
+#post-text{
+    font-size: 20px;
+}
+.likeBlogButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#likeCount{
+    margin-top: 10px;
+}
+.comment_body{
+    display: flex;
+    flex-flow: column;
+}
+#addList{
+    width: 85px;
+    margin-top: 10px;
+    height: 35px;
+}
+#addEventNames{
+    margin-top: 10px;
+    background: gray;  
+
+}
+p3{
+    background: white;
+}
+.comments{
+    background: white;
+    margin: 15px;
+}
+#likeBlog{
+    width: 75px;
+    height: 35px;
+    background: #ff3e8b;
+    border: none;
+    color: white;
+}
+.likeBlog:hover,
+.likeBlog:focus {
+  background: #ff0066;
+}
+#like_Btn{
+    color: white;
+}

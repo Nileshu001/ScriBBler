@@ -1,43 +1,33 @@
-// Get the modal for Sign_In
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("Sign_up");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
+function function3() {
+  // Get the modal element
+  const modal = document.getElementById("myModal3");
+  
+  // Show the modal
   modal.style.display = "block";
+  
+  // Add a blur effect to the background
+  const blog = document.querySelector(".blog");
+  
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// Get the close button element for each modal
+var closeBtn1 = document.querySelector(".Sign_up_modal .close");
+var closeBtn2 = document.querySelector(".Sign_in_modal .close");
+var closeBtn3 = document.querySelector(".create_Post_modal .close");
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-const exampleModal = document.getElementById('exampleModal')
-if (exampleModal) {
-  exampleModal.addEventListener('show.bs.modal', event => {
-    // Button that triggered the modal
-    const button = event.relatedTarget
-    // Extract info from data-bs-* attributes
-    const recipient = button.getAttribute('data-bs-whatever')
-    // If necessary, you could initiate an Ajax request here
-    // and then do the updating in a callback.
+// Add event listener to close button for each modal
+closeBtn1.addEventListener("click", function() {
+  var modal1 = document.getElementById("myModal1");
+  modal1.style.display = "none";
+});
 
-    // Update the modal's content.
-    const modalTitle = exampleModal.querySelector('.modal-title')
-    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+closeBtn2.addEventListener("click", function() {
+  var modal2 = document.getElementById("myModal2");
+  modal2.style.display = "none";
+});
 
-    modalTitle.textContent = `New message to ${recipient}`
-    modalBodyInput.value = recipient
-  })
-}
+closeBtn3.addEventListener("click", function() {
+  var modal3 = document.getElementById("myModal3");
+  modal3.style.display = "none";
+});
+

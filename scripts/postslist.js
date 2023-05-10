@@ -1,20 +1,26 @@
-var modal3 = document.getElementById("myModal3");
-var btn3 = document.getElementById("myBtn3");
-var span3 = document.getElementsByClassName("close")[2];
-var count1=0;
- btn3.onclick  = function() {
-  modal3.style.display = "block";
-  count1=3;
-}
-span3.onclick = function() {
-  modal3.style.display = "none";
-  count1=0;
-}
-window.onclick = function(event) 
-{
- if(event.target == modal3 && count1==3) 
-  {
-    modal3.style.display = "none";
-    count1=0;
-  }
+function delect() {
+    // Get the modal element
+    var modal = document.getElementById("myModal3");
+
+    // Get the Yes and No buttons inside the modal
+    var yesBtn = modal.querySelector("#Yes");
+    var noBtn = modal.querySelector("#No");
+
+    // Display the modal
+    modal.style.display = "block";
+
+    // Add click event listeners to the Yes and No buttons
+    yesBtn.addEventListener("click", function() {
+        // Code to execute if the user clicks the Yes button
+        console.log("Delete confirmed");
+        // Close the modal
+        modal.style.display = "none";
+    });
+
+    noBtn.addEventListener("click", function() {
+        // Code to execute if the user clicks the No button
+        console.log("Delete canceled");
+        // Close the modal
+        modal.style.display = "none";
+    });
 }

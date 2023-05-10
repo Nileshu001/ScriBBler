@@ -1,12 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post</title>
+    <title>postslist</title>
+    <link rel="stylesheet" href="../styles/post.css">
+    <link rel="stylesheet" href="../styles/common.css">   
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
-<body>
-    
+
+<body style="margin: 1%;">
+<!-- website header part start here -->
+    <div class="header">
+        <div>
+            <header class="heading">ScriBBler</header>
+            <a class="subheading">Explore, Imagine, Create</a>
+        </div>
+        <div class="submit">
+            <button class="btn btn-primary" id="Sign_up" onclick="function1()">Sign Up</button>
+            <div id="myModal1" class="Sign_up_modal">
+                <!-- Modal content -->
+                <div class="modal_header">
+                    <p>Get Started</p>
+                    <button type="button" class="close">&times;</button>
+                </div><hr>
+                <div class="Sign_up_form" id="Sign_up_form">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter Your Name" required>
+                    <label>Usename</label>
+                    <input type="text" placeholder="Enter Your Usename" required>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Your Password" required>
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-enter Your Password" required>
+                </div>
+                <div class="Sign_up_modal_footer">
+                    <button type="button" class="Sign_btn">Sign Up</button>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="Sign_in" onclick="function2()">Sign In</button>
+            <div id="myModal2" class="Sign_in_modal">
+                <!-- Modal content -->
+                <div class="modal_header">
+                    <p>Welcome Back</p>
+                    <button type="button" class="close">&times;</button>
+                </div><hr>
+                <div class="Sign_in_form" id="Sign_in_form">
+                    <label>Usename</label>
+                    <input type="text" placeholder="Enter Your Usename" required>
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Your Password" required>
+                </div>
+                <div class="Sign_in_modal_footer">                    
+                    <button type="button" class="Sign_btn">Sign In</button>
+                    <div>
+                        <span>Not a member? </span><a href="Sign_up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- website header part end here -->
+<!-- website UserPost part start here -->
+<div class="container_post">
+    <div class="container_post_header" id="container_post_header">
+		<h2 id="post-title">Lorem ipsum dolor sit amet</h2>
+        <div class="userAndButton">
+        <div class="author">Posted by John Doe</div>
+        <button class="edit-button" id="edit-btn">Edit  <i class="bi bi-pencil-square"></i></button>
+        <button class="save-button" id="save-btn">Save  <i class="bi bi-save"></i></button>
+        </div>
+		<p id="post-text">
+            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1]
+            Hendrix expanded the range and vocabulary of the electric guitar into areas no musician
+            had ever ventured before. His boundless drive, technical ability and creative application
+            of such effects as distortion forever transformed the sound of rock and roll. While creating
+            his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues,
+            R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.
+            Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental
+            in developing the previously undesirable technique of guitar amplifier feedback, and helped
+            to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard
+            barre chord fretting technique used by most guitarists in favor of fretting the low 6th string
+            root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing",
+            which allowed him to sustain the root note of chords while also playing melody. This method has been
+            described as piano style, with the thumb playing what a pianist's left hand would play and the other
+            fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed
+            an ability to play rhythm chords and lead lines together, giving the audio impression that more than
+            one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing
+            effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered
+            the use of the instrument as an electronic sound source. Players before him had experimented with feedback
+            and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit
+            as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two
+            eras ï¿½ before Hendrix and after Hendrix."
+        </p>
+    </div>
+<!-- website UserPost part end here -->
+<!-- website loke and comments section start here -->
+    <div >
+        <div class="likeBlogButton">
+            <button  id= "likeBlog" class="likeBlog" onclick="postLiked()"><i class="bi bi-hand-thumbs-up-fill" id="like_Btn"></i> Like</button>
+            <div><span id="likeCount">Be the first one to like this!</span></div>
+        </div>
+        <div class="comment_body">
+             <textarea type="textarea" placeholder="Add your comments" id="userComments" value=""></textarea>
+             <button id="addList" onclick="addComments(userComments)">Comment</button>
+             <div id="addEventNames"></div>
+        </div>
+    </div>
+<!-- website loke and comments section end here -->       
+<script src="../scripts/post.js"></script>
+<script src="../scripts/common.js"></script>         
 </body>
 </html>

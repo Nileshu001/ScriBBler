@@ -1,55 +1,46 @@
 body{    
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
          
-}
-.subheading{
-font-family: 'Ubuntu Mono'; 
 }
 .blog{
   display: flex;
   justify-content: center;
-  padding-block-start: 20%;
+  align-items: center;
+  width: 100%;
+  height: 455px;
   
 }
-.Sign_up_modal{
+p6{
+  font-size: 20px;
+}
+#myModal3{
+  background: white;
   display: none;
+  flex-flow: column;
+  justify-content: center;
+  width: 80%;
+  padding: 2%;
+  position: fixed;
+  margin-top: 5%;
 }
-.Sign_in_modal{
-  display: none;
+.create_btn{
+  width: 80px;
+  height: 35px;
+  background: rgb(7, 230, 7);
+  color: white;
+  margin-top: 2%;
+  border: none;
 }
-.Sign_up_form{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-.Sign_in_form{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-.Sign_in_modal_footer{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-.close:hover,
-.close:focus {
-  color: grey;
-  text-decoration: none;
+.create_btn:hover,
+.create_btn:focus {
+  background: green;
+  color: white;
   cursor: pointer;
 }
-.Sign_btn{
-  width: 100%;
-  margin: 15px 0;
-  color: white;
-  background-color: green;
-  border: none; 
-  height: 30px;;
+textarea{
+  height: 200px;
 }
-
-
-
-
-
+.postTitle{
+  padding: 1%;
+}
