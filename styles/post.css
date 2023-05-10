@@ -71,6 +71,14 @@ p{
     width: 85px;
     margin-top: 10px;
     height: 35px;
+    background: #ff0066;
+    color: white;
+    border: none;
+}
+#addList:hover,
+#addList:focus {
+  background: #ff0066;
+  border: 2px white;
 }
 #addEventNames{
     margin-top: 10px;
